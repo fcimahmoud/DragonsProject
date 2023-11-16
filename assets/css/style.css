@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main{
+    background-image: linear-gradient(rgba(40,0,0,0.8),rgba(40,0,0,0.8)),url(../img/siteBg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+ .login
+{
+    background: rgba( 255, 255, 255, 0.02 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: rgb(204, 0, 10) 10px 10px 10px;
+}
+#login
+{
+    background: rgb(223,85,146);
+    background: linear-gradient(90deg, rgba(223, 140, 85, 0.914) 0%, rgb(233, 148, 148) 100%);
+    font-size: 25px;
+    font-weight: 700;
+    color:white
+}
+h1
+{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    letter-spacing: 2px;
+    color:orangered;
+    font-weight: 900;
+}

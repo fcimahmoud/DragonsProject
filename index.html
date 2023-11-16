@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/siteico.ico">
+  <title>Dragons Park</title>
+<!-- &-------------------------- Google Fonts Link -------------------------- -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+<!--& ------------------------- Bootstrap CSS Link -------------------------- -->
+<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+<!--& --------------------------- Style CSS Link ---------------------------- -->
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body onload="display_time()">
+  <div class="main vh-100 w-100 d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="login col-md-6 col-sm-12 justify-content-center d-flex flex-wrap align-items-center m-auto p-4">
+          <h1 class=" form-title my-5 display-4">Dragons Park</h1>
+          <input type="text" name="ueserName" id="uName" class="form-control my-2 " placeholder="Username">
+          <input type="password" name="password" id="loginPassword" class="form-control my-2" placeholder="Password">
+          <p id="alertRegister"class="text-danger my-2 display-6 fw-bolder"></p>
+          <button class="form-control my-5" id="login" onclick="login()">login</button>
+      </div>
+  </div>
+  </div>
+
+  <!-- &------------------------------ Main Home ------------------------------ -->
+  <div class="main2 w-100 bg-dark p-5 ">
+    <div class="site-header d-flex flex-wrap align-items-center  justify-content-around">
+      <input type="text" class="form-control m-3 w-75" placeholder="Search By ID">
+      <button class="btn btn-warning">Done</button>
+      <input type="text" class="form-control m-3 w-75" placeholder="Search By Coordinates">
+      <button class="btn btn-warning">Done</button>
+      <h1 class="mt-5 mb-5">Dragons Park</h1>
+      <div id="ti" class="text-white fw-bolder"></div>
+    </div>
+    <div class="container">
+      <table class="table table-bordered table-hover shadow-lg fw-bolder text-center">
+        <thead id="tableHead"></thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+      <button class="btn btn-outline-info fw-bolder p-2 m-auto" id="refresh">Refresh <span><i class="fa-solid fa-rotate fa-beat fa-lg"></i></span></button>
+    </div>
+  </div>
+  <!--& ------------------------ FontAwesome Js Link ------------------------- -->
+  <script src="https://kit.fontawesome.com/a99476e1dc.js" crossorigin="anonymous"></script>
+  <!--& -------------------------- Bootstrap JS Link -------------------------- -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!--& --------------------------- Script JS Link ---------------------------- -->
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
